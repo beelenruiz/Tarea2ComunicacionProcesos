@@ -11,7 +11,7 @@ public class EjecutaValidaArgumentos {
 
         try {
             // escribimos el valor en los parametros del proceso hijo
-            pb.command().add("3");
+            pb.command().add("hola");
 
             // iniciamos
             Process p = pb.start();

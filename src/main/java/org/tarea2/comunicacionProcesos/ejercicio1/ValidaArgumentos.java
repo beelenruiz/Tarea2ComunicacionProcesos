@@ -2,8 +2,6 @@ package org.tarea2.comunicacionProcesos.ejercicio1;
 
 public class ValidaArgumentos {
     public static void main(String[] args) {
-        String[] valor = args;
-
         // numero de argumentos menor que 1
         if (args.length < 1) System.exit(1);
 
@@ -18,7 +16,7 @@ public class ValidaArgumentos {
             System.exit(4);
 
         } catch (NumberFormatException e) {
-            // el argumento e suna cadena
+            // el argumento es una cadena
             System.exit(2);
         }
     }
