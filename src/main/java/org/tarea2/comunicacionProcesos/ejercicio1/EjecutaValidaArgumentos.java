@@ -9,6 +9,9 @@ public class EjecutaValidaArgumentos {
     public static void main(String[] args) {
         ProcessBuilder pb = new ProcessBuilder("java", "-cp", System.getProperty("java.class.path"), "org.tarea2.comunicacionProcesos.ejercicio1.ValidaArgumentos");
 
+        // mostrará errores por consola, si los hay
+        pb.inheritIO();
+
         try {
             // escribimos el valor en los parametros del proceso hijo
             pb.command().add("hola");

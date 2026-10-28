@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 public class TransformadorTxt {
     static void main(String[] args) {
         try {
+            // lee el mensaje y lo escribe en mayusculas
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             String mensaje;
             while ((mensaje = br.readLine()) != null){

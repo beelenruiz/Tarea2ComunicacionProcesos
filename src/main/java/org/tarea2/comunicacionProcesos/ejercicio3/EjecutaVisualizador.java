@@ -16,7 +16,7 @@ public class EjecutaVisualizador {
         pb.command().add(cadena);
         pb.command().add("5");
 
-        // la salida se mostrara por terminal
+        // la salida se mostrara por terminal (incluidos posibles errores)
         pb.inheritIO();
 
         try {

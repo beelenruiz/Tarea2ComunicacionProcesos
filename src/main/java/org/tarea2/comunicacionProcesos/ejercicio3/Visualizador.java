@@ -11,7 +11,7 @@ public class Visualizador {
 
         // comprobamos si la cadena esta vacia
         cadena = args[0];
-        if (cadena.trim().isEmpty()) System.exit(1);
+        if (cadena.isBlank()) System.exit(1);
 
         // comprobamos el numero de repeticiones
         try {
@@ -23,6 +23,5 @@ public class Visualizador {
         for (int i = 1; i < num; i++){
             System.out.println(i + ". " + cadena);
         }
-        System.exit(0);
     }
 }

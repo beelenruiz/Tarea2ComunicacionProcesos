@@ -20,6 +20,11 @@ public class LectorTxt {
                 System.out.print("Introduce un mensaje ('fin' para terminar): ");
                 msg = Entrada.cadena();
 
+                if (msg.isBlank()) {
+                    System.out.print("El mensaje no puede estar vacío. Intentalo de nuevo: ");
+                    msg = Entrada.cadena();
+                }
+
                 // mandamos cadena al hijo por entrada estandar
                 writer.write(msg);
                 writer.newLine();
